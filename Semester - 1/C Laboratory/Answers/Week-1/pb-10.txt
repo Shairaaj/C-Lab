@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+void main()
+{
+    float x;
+    int y;
+
+    printf("y | x = i\n");
+    for (y=1;y<=6;y++)
+    {
+        for (x=5.5;x<=12.5; x=x+0.5)
+        {
+            printf("%d | %.1f = %.1f\n",y,x,(2+(y+0.5*x)));
+        }
+    }
+}

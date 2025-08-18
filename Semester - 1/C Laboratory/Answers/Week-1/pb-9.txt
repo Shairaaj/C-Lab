@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdbool.h>
+void main()
+{
+    int num,rem=0,quot=0,newNum,temp=0;
+    bool isPal=false;
+    printf("Enter the number: ");
+    scanf("%d",&num);
+
+    while (isPal==false)
+    {
+        num++;
+        temp=num;
+        newNum=0;
+        while (temp>0)
+        {
+            rem=temp%10;
+            newNum=newNum*10+rem;
+            temp=temp/10;
+        }
+
+        if (num==newNum)
+        {
+            printf("The next smallest palindrome is: %d\n",newNum);
+            break;
+        }
+    }
+}
